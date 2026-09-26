@@ -11,3 +11,20 @@ body{overflow-x:hidden}.video-footer{display:flex;align-items:center;justify-con
   .hero-episode-title strong{display:block;margin-top:5px;color:white;font-family:'Space Grotesk',sans-serif;font-size:18px;letter-spacing:-.02em;line-height:1.2}
   .hero-copy{margin-top:0;padding-top:27px}
 }
+
+/* Iconos geométricos dibujados en CSS, sin caracteres con presentación emoji. */
+.announcement span{display:inline-block;width:8px;height:8px;background:var(--navy);transform:rotate(45deg);flex:none}
+.star,.club-mark,.club-spark,.hero-sticker span{display:inline-block;position:relative;width:18px;height:18px;font-size:0;flex:none}
+.star::before,.star::after,.club-mark::before,.club-mark::after,.club-spark::before,.club-spark::after,.hero-sticker span::before,.hero-sticker span::after{content:"";position:absolute;left:50%;top:50%;background:currentColor;border-radius:2px;transform:translate(-50%,-50%)}
+.star::before,.club-mark::before,.club-spark::before,.hero-sticker span::before{width:4px;height:100%}
+.star::after,.club-mark::after,.club-spark::after,.hero-sticker span::after{width:100%;height:4px}
+.star{color:var(--pink);vertical-align:middle;margin-left:5px}
+.club-mark{color:var(--pink);width:20px;height:20px}
+.club-spark{position:absolute;top:20px;right:30px;color:#f9eb53;width:27px;height:27px}
+.hero-sticker span{color:#11b44f;width:20px;height:20px;position:absolute;bottom:10px;left:50%;transform:translateX(-50%)}
+.menu-toggle{width:27px;height:27px;padding:0;cursor:pointer;background:linear-gradient(currentColor,currentColor) center 6px/21px 2px no-repeat,linear-gradient(currentColor,currentColor) center 13px/21px 2px no-repeat,linear-gradient(currentColor,currentColor) center 20px/21px 2px no-repeat}
+.play-small{display:inline-block;width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:8px solid currentColor;vertical-align:middle;margin-right:4px}
+.episode-media span::before{content:"";display:block;width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-left:11px solid currentColor;margin-left:3px}
+.close-dialog{cursor:pointer}
+.close-dialog::before,.close-dialog::after{content:"";position:absolute;left:50%;top:50%;width:17px;height:2px;background:currentColor;transform:translate(-50%,-50%) rotate(45deg)}
+.close-dialog::after{transform:translate(-50%,-50%) rotate(-45deg)}
