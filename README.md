@@ -1,6 +1,8 @@
 # Nojoda Chica — propuesta visual
 
 Mockup público y no oficial para explorar una web del podcast **Nojoda Chica**.
+
+Vista publicada: https://nojoda-chica-concept.pages.dev/
 No procesa pagos, no autentica miembros y no ofrece acceso a contenido privado.
 
 ## Contenido utilizado
